@@ -1,7 +1,15 @@
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    padding: 3rem;
 }
 
 label {
@@ -21,9 +29,16 @@ textarea {
     justify-content: center;
     height: 90vh;
     flex-direction: column;
-    width: 48%;
+    width: 50%;
 }
 
+#input {
+    padding-right: 1.5rem;
+    border-right: solid black 1px;
+}
+#output {
+    padding-left: 1rem;
+}
 #input textarea {
     width: 100%;
 }
@@ -38,6 +53,7 @@ textarea {
 
 #output > div {
     max-width: 95%;
+    min-height: 40%;
 }
 
 #html_output {
