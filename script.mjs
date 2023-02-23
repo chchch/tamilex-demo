@@ -75,7 +75,7 @@ const teitohtml = async (str) => {
     const sheet = xml.parseString(restext);
     const out = await xml.XSLTransform(sheet,teidoc);
     const frag = document.createDocumentFragment();
-    while(out.documentElement.firstChild) frag.appendChild(out.documentElement.firstChild);
+    while(out.body.firstChild) frag.appendChild(out.body.firstChild);
     return frag;
 };
 

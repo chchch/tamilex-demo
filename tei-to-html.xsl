@@ -8,7 +8,9 @@
 
 <xsl:template match="tei:TEI">
     <html>
-        <xsl:apply-templates/>
+        <body>
+            <xsl:apply-templates/>
+        </body>
     </html>
 </xsl:template>
 
