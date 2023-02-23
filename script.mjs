@@ -53,7 +53,7 @@ const collate = (text, words) => {
         const lemma = cur[1];
         const found = ingest(rem,find);
         if(!found)
-            return `error at ${find}.`;
+            return `Error at ${find}.`;
 
         const spacesmatch = found[0].match(/^[\s\n]+/);
         const spaces = spacesmatch ? spacesmatch[0] : '';
@@ -64,7 +64,7 @@ const collate = (text, words) => {
             res += `${spaces}<w>${trimmed}</w>`.replace(/\n/,'<caesura/>');
         rem = found[1];
     }
-    return `<s>${res}</s>`;
+    return `<s>${res}</s>${rem}`;
 };
 
 const teitohtml = async (str) => {
