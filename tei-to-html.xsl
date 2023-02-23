@@ -22,7 +22,8 @@
             <xsl:element name="ruby">
                 <xsl:apply-templates/>
                 <xsl:element name="rp">(</xsl:element>
-                <xsl:element name="rt"><xsl:value-of select="@lemma"/></xsl:element>
+                <xsl:element name="rt"><xsl:value-of select="@lemma"/>&#8203;</xsl:element>
+                <!-- zero-width space forces the annotation to be displayed even if it is the same as the text being annotated -->
                 <xsl:element name="rp">)</xsl:element>
             </xsl:element>
         </xsl:when>
