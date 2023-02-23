@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+textarea {
+    font-size: 1.2rem;
+    max-height: 40vh;
+    font-family: 'Brill', 'Noto Serif Tamil', 'TST Grantha';
+}
+
+#input, #output {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 90vh;
+    flex-direction: column;
+    width: 48%;
+}
+
+#input textarea {
+    width: 100%;
+}
+
+#output {
+    font-size: 1.2rem;
+}
+
+#output label {
+    margin-bottom: 1.5rem;
+}
+
+#html_output {
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+}

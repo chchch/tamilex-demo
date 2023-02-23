@@ -1,0 +1,58 @@
+<html lang="en"><head></head><body lang="en">﻿
+
+
+<title>Text and gloss linker</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="icon" type="image/png" href="favicon-32.png">
+<link rel="stylesheet" href="https://tst-project.github.io/lib/css/tufte.css">
+
+<link rel="stylesheet" href="https://tst-project.github.io/lib/css/fonts.css">
+<link rel="stylesheet" href="https://tst-project.github.io/lib/css/tst.css">
+<link rel="stylesheet" href="https://tst-project.github.io/lib/css/header.css">
+<link rel="stylesheet" href="https://tst-project.github.io/lib/css/transcription.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="a11y-light.css">
+<script type="module" src="script.mjs"></script>
+
+<body>
+    <div id="input">
+        <label for="text_input">Text</label>
+        <textarea autocomplete="off" rows="10" id="text_input">
+வண்டுபடத் ததைந்த கண்ணி யொண்கழ
+லுருவக் குதிரை மழவ ரோட்டிய
+முருக னற்போர் நெடுவே ளாவி
+யறுகோட் டியானைப் பொதுளிய யாங்கட் </textarea>
+
+        <label for="word_input">Word glosses</label>
+        <textarea autocomplete="off" rows="20" id="word_input">
+vaṇṭu
+paṭat - paṭa 
+tatainta 
+kaṇṇi 
+யொண் - oḷ
+kaḻal
+uruvak - uruva 
+kutirai
+maḻavar 
+ōṭṭiya
+murukaṉ 
+aṟ - nal 
+pōr 
+neṭu 
+vēḷ 
+āvi
+yaṟu - aṟu
+kōṭṭi - kōṭṭi
+yāṉaip - yāṉai
+potuḷiya
+yāṅkaṭ - āṅkaṇ</textarea>
+    </div>
+    <div id="output">
+        <label for="#tei_output">TEI code</label>
+        <div id="tei_output"></div>
+        <label for="#html_output">HTML display</label>
+        <div id="html_output"></div>
+    </div>
+</body></html>
