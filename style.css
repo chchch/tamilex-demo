@@ -54,6 +54,7 @@ textarea {
 #output > div {
     max-width: 95%;
     min-height: 40%;
+    padding: 1rem;
 }
 
 #html_output {
