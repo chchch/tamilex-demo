@@ -20,6 +20,7 @@ const init = () => {
         ta.addEventListener('keyup',keyup);
         ta.addEventListener('blur',update);
     }
+    document.getElementsByTagName('button')[0].addEventListener('click',update);
 };
 
 const keyup = (e) => {
