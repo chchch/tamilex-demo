@@ -35,7 +35,7 @@ const update = async () => {
     const text = tamilToIast(state.textin.value);
     const words = tamilToIast(state.wordin.value);
     const result = collate(text,words);
-    state.teiout.textContent = result;
+    state.teiout.textContent = result.replace(/></g,'>​<').replace(/\s/g,' ');
     hljs.highlightElement(state.teiout);
     state.htmlout.innerHTML = '';
     const out = await teitohtml(result);

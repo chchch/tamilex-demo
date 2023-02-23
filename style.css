@@ -36,6 +36,10 @@ textarea {
     margin-bottom: 1.5rem;
 }
 
+#output > div {
+    max-width: 95%;
+}
+
 #html_output {
     line-height: 3.5rem;
     font-size: 1.5rem;
