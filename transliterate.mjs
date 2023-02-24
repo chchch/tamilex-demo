@@ -96,7 +96,7 @@ const tamilize = (frag) => {
     }
     if(prev) prev.data = iastToTamil(prev.data,'iast','tamil');
 
-    for(const rt of frag.querySelectorAll('rt')) {
+    for(const rt of frag.querySelectorAll('rt, span.word .anno-inline')) {
         const walker2 = document.createTreeWalker(rt,NodeFilter.SHOW_TEXT);
         while(walker2.nextNode()) {
             if(walker2.currentNode.parentElement.lang.startsWith('ta'))
