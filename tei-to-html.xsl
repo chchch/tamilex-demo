@@ -51,10 +51,15 @@
                 <xsl:element name="rp">(</xsl:element>
                 <xsl:element name="rt">
                     <xsl:attribute name="lang">ta</xsl:attribute>
+                    <xsl:attribute name="data-lemma"><xsl:value-of select="$clean"/></xsl:attribute>
                     <xsl:attribute name="data-anno"/>
                     <xsl:element name="span">
                         <xsl:attribute name="lang">en</xsl:attribute>
                         <xsl:attribute name="class">anno-inline</xsl:attribute>
+                        <xsl:if test="@ana">
+                            <xsl:value-of select="@ana"/>
+                            <xsl:element name="hr"/>
+                        </xsl:if>
                         <xsl:text>lookup </xsl:text>
                         <xsl:element name="span">
                             <xsl:attribute name="lang">ta</xsl:attribute>
@@ -71,10 +76,15 @@
         <xsl:otherwise>
             <xsl:element name="span">
                 <xsl:attribute name="class">word</xsl:attribute>
+                <xsl:attribute name="data-lemma"><xsl:value-of select="text()"/></xsl:attribute>
                     <xsl:attribute name="data-anno"/>
                     <xsl:element name="span">
                         <xsl:attribute name="lang">en</xsl:attribute>
                         <xsl:attribute name="class">anno-inline</xsl:attribute>
+                        <xsl:if test="@ana">
+                            <xsl:value-of select="@ana"/>
+                            <xsl:element name="hr"/>
+                        </xsl:if>
                         <xsl:text>lookup </xsl:text>
                         <xsl:element name="span">
                             <xsl:attribute name="lang">ta</xsl:attribute>

@@ -42,7 +42,7 @@ const init = () => {
 
 const lookup = (e) => {
     if(e.target.nodeName === 'RT' || e.target.classList?.contains('word')) {
-        const clean = e.target.childNodes[1].textContent.trim().replace(/[~*=+~%^]/g,'');
+        const clean = e.target.dataset.lemma.trim();
         window.open(`https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=${clean}&searchhws=yes&matchtype=exact`,'lexicon','height=400,width=400');
     }
 };

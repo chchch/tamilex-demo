@@ -82,6 +82,11 @@ rt:hover, span.word:hover {
     cursor: pointer;
 }
 
+#tooltip {
+    font-size: 1.1rem;
+}
+
 #assets {
     display: none;
 }
+

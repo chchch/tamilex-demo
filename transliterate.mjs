@@ -67,9 +67,12 @@ const tamilToIast = (text) => Sanscript.t(text,'tamil','iast')
 const tamilize = (frag) => {
     const walker = document.createTreeWalker(frag,NodeFilter.SHOW_TEXT,{
         acceptNode(node) {
-            const parTag = node.parentNode.nodeName;
-            if(parTag === 'RP' || parTag === 'RT' || node.parentNode.classList?.contains('anno-inline')) return NodeFilter.FILTER_REJECT;
-            return NodeFilter.FILTER_ACCEPT;
+            /*if(parTag === 'RP' || parTag === 'RT' || (node.parentNode !== frag && node.parentNode.closest('.anno-inline'))) return NodeFilter.FILTER_REJECT;
+            return NodeFilter.FILTER_ACCEPT;*/
+            if(node.parentNode.nodeName === 'RUBY' || 
+               node.parentNode.classList?.contains('word'))
+                return NodeFilter.FILTER_ACCEPT;
+                else return NodeFilter.FILTER_REJECT;
         }
     },false);
     let prev = null;
