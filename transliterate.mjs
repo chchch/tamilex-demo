@@ -64,4 +64,37 @@ const tamilToIast = (text) => Sanscript.t(text,'tamil','iast')
 .replace(/^⁰|([^\d⁰])⁰/g,'$1¹⁰')
 .replace(/l̥/g,'ḷ');
 
-export { iastToTamil, tamilToIast };
+const tamilize = (frag) => {
+    const walker = document.createTreeWalker(frag,NodeFilter.SHOW_TEXT,{
+        acceptNode(node) {
+            const parTag = node.parentNode.nodeName;
+            if(parTag === 'RP' || parTag === 'RT') return NodeFilter.FILTER_REJECT;
+            return NodeFilter.FILTER_ACCEPT;
+        }
+    },false);
+    let prev = null;
+    const vowels = /[aāiīuūoōeēṛṝ]/;
+    while(walker.nextNode()) {
+        if(prev) {
+            const first = walker.currentNode.data[0];
+            if(first.match(vowels)) {
+                const start = prev.data.slice(-1);
+                prev.data = prev.data.slice(0,-1);
+                walker.currentNode.data = start + walker.currentNode.data;
+            }
+            prev.data = iastToTamil(prev.data,'iast','tamil');
+            prev = null;
+        }
+        const last = walker.currentNode.data.slice(-1);
+        if(!last.match(/[aāiīuūoōeēṛṝ]/)) {
+            prev = walker.currentNode;
+        }
+        else walker.currentNode.data = iastToTamil(walker.currentNode.data,'iast','tamil');
+    }
+    if(prev) prev.data = iastToTamil(prev.data,'iast','tamil');
+
+    for(const rt of frag.querySelectorAll('rt'))
+        rt.textContent = iastToTamil(rt.textContent,'iast','tamil');
+};
+
+export { iastToTamil, tamilToIast, tamilize };
