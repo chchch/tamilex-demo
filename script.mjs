@@ -27,6 +27,10 @@ const init = () => {
         state.textin.value = data.text || '';
         state.wordin.value = data.words || '';
     }
+    else {
+        state.textin.value = document.getElementById('default_text').textContent;
+        state.wordin.value = document.getElementById('default_gloss').textContent;
+    }
     for(const ta of [state.textin,state.wordin]) {
         ta.addEventListener('keyup',keyup);
         ta.addEventListener('blur',update);

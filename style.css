@@ -72,3 +72,7 @@ button {
 ruby {
     white-space: pre;
 }
+
+#assets {
+    display: none;
+}
