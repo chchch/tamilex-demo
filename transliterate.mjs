@@ -68,7 +68,7 @@ const tamilize = (frag) => {
     const walker = document.createTreeWalker(frag,NodeFilter.SHOW_TEXT,{
         acceptNode(node) {
             const parTag = node.parentNode.nodeName;
-            if(parTag === 'RP' || parTag === 'RT') return NodeFilter.FILTER_REJECT;
+            if(parTag === 'RP' || parTag === 'RT' || node.parentNode.classList?.contains('anno-inline')) return NodeFilter.FILTER_REJECT;
             return NodeFilter.FILTER_ACCEPT;
         }
     },false);
@@ -93,8 +93,13 @@ const tamilize = (frag) => {
     }
     if(prev) prev.data = iastToTamil(prev.data,'iast','tamil');
 
-    for(const rt of frag.querySelectorAll('rt'))
-        rt.textContent = iastToTamil(rt.textContent,'iast','tamil');
+    for(const rt of frag.querySelectorAll('rt')) {
+        const walker2 = document.createTreeWalker(rt,NodeFilter.SHOW_TEXT);
+        while(walker2.nextNode()) {
+            if(walker2.currentNode.parentElement.lang.startsWith('ta'))
+                walker2.currentNode.data = iastToTamil(walker2.currentNode.data,'iast','tamil');
+        }
+    }
 };
 
 export { iastToTamil, tamilToIast, tamilize };
