@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="edition.xsl" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="Ed">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Akanāṉūṟu 1.1</title>
+      </titleStmt>
+      <sourceDesc>
+        <msDesc xml:lang="en">
+          <msIdentifier>
+            <idno type="URI">https://www.manuscript-cultures.uni-hamburg.de/tamilex/poem.html?page=AN_1-1.xml</idno>
+          </msIdentifier>
+           <msContents>
+            <summary><p>Copied from the Tamilex website.</p>
+            </summary>
+          </msContents>    
+        </msDesc>
+        <listWit></listWit>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text xml:lang="ta" type="edition">
+    <body>
+<p><div><w ana="bee">vaṇṭu</w><w lemma="paṭa" ana="happen(inf).">paṭat</w> <w ana="densely-packed-">tatainta</w> <w ana="chaplet">kaṇṇi</w> <w lemma="oḷ" ana="bright">yoṇ</w><w lemma="kaḻal" ana="anklet">kaḻa<caesura/>l</w><w lemma="uruva" ana="shape">uruvak</w> <w ana="horse">kutirai</w> <w lemma="maḻavar" ana="warrior(h.)">maḻava r</w><w lemma="ōṭṭiya" ana="made-run-">ōṭṭiya</w> <caesura/> <w lemma="murukaṉ" ana="Murukaṉ">muruka</w> <w lemma="nal" ana="good">ṉaṟ</w><w ana="battle">pōr</w> <w ana="long">neṭu</w><w lemma="vēḷ" ana="ruler">vē ḷ</w><w ana="Āvi">āvi</w><caesura/><w lemma="aṟu" ana="be-severed-">yaṟu</w><w lemma="kōṭṭu" ana="tusk-">kōṭ ṭi</w><w lemma="yāṉai" ana="elephant">yāṉaip</w> <w ana="been-full-">potuḷiya</w> <w lemma="āṅkaṇ" ana="that-place">yāṅkaṭ</w></div>
+<div>
+In that place full of the elephants with broken tusks <caesura/>
+of Āvi with long rule in good battle, [and] of Murukaṉ, <caesura/>
+who made warriors with shapely horses run, <caesura/>
+bright anklets [and] chaplets dense so that bees settle [there],
+</div>
+</p>
+<p>
+<div><w>ciṟu</w><w lemma="kārōṭaṉ">kā rōṭaṉ</w> <w>payiṉoṭu</w> <w>cērttiya</w> <caesura/> <w lemma="kal">kaṟ</w><w lemma="pōl">pōṟ</w> <w lemma="piriyalam">piriyala m</w><w>eṉṟa</w> <w lemma="col">coṟ</w><w lemma="tām">ṟā</w><caesura/><w>maṟantaṉar</w> <w>kollō</w> <w>tōḻi</w> <w>ciṟanta</w> <caesura/> <w>vēy</w><w>maruḷ</w> <w lemma="paṇai">paṇait</w><w lemma="tōḷ">tō ṇ</w><w lemma="nekiḻa">ekiḻac</w> <w>cēey</w><w lemma="nāṭṭu">nāṭṭup</w>
+</div>
+<div>
+the words “we won’t separate, like the stones<caesura/>
+joined together with glue by the little whetstone maker”,<caesura/>
+has he forgotten [them], friend,<caesura/>
+– he who,
+</div>
+</p>
+<p>
+<div><w lemma="polam">polaṅ</w><w lemma="kalam">kala</w> <w>veṟukkai</w> <w>tarumār</w> <w>nilam</w><w>paka</w> <caesura/> <w lemma="aḻal">vaḻal</w><w>pōl</w> <w lemma="vem">veṅ</w><w>katir</w> <w lemma="paitu">pait</w><w lemma="aṟa">aṟat</w> <w lemma="teṟutaliṉ">teṟutali<caesura/>ṉ</w><w lemma="niḻal">iḻa</w><w lemma="tēyntu">ṟēyn t</w><w>ulaṟiya</w> <w>maratta</w> <w>varai</w><w lemma="kāypu">kāy<caesura/>p</w><w>aṟu</w><w lemma="nīr">nīrp</w> <w lemma="paim">paiñ</w><w>cuṉai</w> <w lemma="ām">yām</w><w lemma="aṟa">aṟap</w> <w lemma="pulartaliṉ">pulartali</w>
+</div>
+<div>
+in order to bring a wealth of golden ornaments, from strange lands,<caesura/>
+while [my] superb bamboo-like bamboo shoulders become emaciated,<caesura/>
+traversed wildernesses that appear like the sea<caesura/>
+before [him], foaming with the spray of breaking waves,
+</div>
+</p>
+<p>
+<div>
+<w lemma="uku">ṉuku</w><w lemma="nel">neṟ</w> <w>poriyum</w> <w>vemmaiya</w> <w>yāvarum</w> <caesura/> <w lemma="vaḻaṅkunar">vaḻaṅkuna r</w><w>iṉmaiyiṉ</w> <w lemma="vauvu[na]r">vauvunar</w> <w lemma="maṭiya">maṭiyac</w> <caesura/> <w>curam</w><w lemma="pulleṉṟa">pul leṉṟa</w> <w lemma="āṟṟa">vāṟṟa</w> <w lemma="alaṅku">valaṅku</w><w>ciṉai</w> <caesura/> <w>nār</w><w lemma="il">iṉ</w> <w>muruṅkai</w> <w>naviral</w> <w lemma="vāl">vāṉ</w><w lemma="pū">pūc</w>
+</div>
+<div>
+roaring when the whirling fierce wind lifts<caesura/>
+the dishevelled pure flowers of barkless Muruṅkai<caesura/>
+with swaying branches on empty desert paths,<caesura/>
+where snatchers doze, in the absence of anybody passing,
+</div>
+</p>
+<p>
+<div><w lemma="cūralam">cūralaṅ</w> <w>kaṭu</w><w>vaḷi</w> <w lemma="eṭuppa">yeṭuppa</w> <w lemma="ār">vār</w><w lemma="uṟṟu">uṟ<caesura/>ṟ</w><w>uṭai</w><w lemma="tirai">tiraip</w> <w lemma="pitirviṉ">pitirviṟ</w> <w>poṅki</w><w>muṉ</w> <caesura/> <w>kaṭal</w><w lemma="pōl">pō ṟ</w><w lemma="tōṉṟala">ōṉṟala</w> <w lemma="kāṭu">kāṭ</w><w lemma="iṟantōrē">iṟan tōrē</w>
+</div>
+<div>
+in the heat that parches the paddy shed because of drying up,<caesura/>
+while the water ceases in mountain pools with ceasing water,<caesura/>
+the rocks with whithering trees sweltering, shade dwindling,<caesura/>
+because [sun] beams hot like fire scorch, so that the green ceases,<caesura/>
+so that the ground cracks.
+</div>
+</p>
+    </body>
+</text>
+</TEI>
