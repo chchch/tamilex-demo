@@ -58,7 +58,7 @@ textarea {
 }
 
 #html_output {
-    line-height: 3.5rem;
+    line-height: 4rem;
     font-size: 1.5rem;
     word-spacing: 0.5rem;
 }
@@ -71,6 +71,15 @@ button {
 
 ruby {
     white-space: pre;
+}
+
+rt {
+    padding-bottom: 0.5rem;
+}
+
+rt:hover, span.word:hover { 
+    background-color: yellow; 
+    cursor: pointer;
 }
 
 #assets {
