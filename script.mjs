@@ -43,7 +43,7 @@ const init = () => {
 const lookup = (e) => {
     if(e.target.nodeName === 'RT' || e.target.classList?.contains('word')) {
         const clean = e.target.textContent.trim().replace(/[~*=+~%^]/g,'');
-        window.open(`https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=${clean}&amp;searchhws=yes&amp;matchtype=exact`,'lexicon','height=400,width=400');
+        window.open(`https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=${clean}&searchhws=yes&matchtype=exact`,'lexicon','height=400,width=400');
     }
 };
 
