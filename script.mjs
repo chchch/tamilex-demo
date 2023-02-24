@@ -1,4 +1,4 @@
-import { iastToTamil, tamilToIast } from './transliterate.mjs';
+import { iastToTamil, tamilToIast, tamilize } from './transliterate.mjs';
 import hljs from './highlight.min.js';
 import hlxml from './xml.min.js';
 import JSONCrush from './JSONCrush.min.js';
@@ -46,7 +46,7 @@ const update = async () => {
     const text = tamilToIast(state.textin.value);
     const words = tamilToIast(state.wordin.value);
     const result = collate(text,words);
-    state.teiout.textContent = result.replace(/></g,'>​<').replace(/\s/g,' ');
+    state.teiout.textContent = result.replace(/>\s*</g,'>​<').replace(/\s/g,' ');
     hljs.highlightElement(state.teiout);
     state.htmlout.innerHTML = '';
     const out = await teitohtml(result);
@@ -94,39 +94,6 @@ const teitohtml = async (str) => {
     const frag = document.createDocumentFragment();
     while(out.body.firstChild) frag.appendChild(out.body.firstChild);
     return frag;
-};
-
-const tamilize = (frag) => {
-    const walker = document.createTreeWalker(frag,NodeFilter.SHOW_TEXT,{
-        acceptNode(node) {
-            const parTag = node.parentNode.nodeName;
-            if(parTag === 'RP' || parTag === 'RT') return NodeFilter.FILTER_REJECT;
-            return NodeFilter.FILTER_ACCEPT;
-        }
-    },false);
-    let prev = null;
-    const vowels = /[aāiīuūoōeēṛṝ]/;
-    while(walker.nextNode()) {
-        if(prev) {
-            const first = walker.currentNode.data[0];
-            if(first.match(vowels)) {
-                const start = prev.data.slice(-1);
-                prev.data = prev.data.slice(0,-1);
-                walker.currentNode.data = start + walker.currentNode.data;
-            }
-            prev.data = iastToTamil(prev.data,'iast','tamil');
-            prev = null;
-        }
-        const last = walker.currentNode.data.slice(-1);
-        if(!last.match(/[aāiīuūoōeēṛṝ]/)) {
-            prev = walker.currentNode;
-        }
-        else walker.currentNode.data = iastToTamil(walker.currentNode.data,'iast','tamil');
-    }
-    if(prev) prev.data = iastToTamil(prev.data,'iast','tamil');
-
-    for(const rt of frag.querySelectorAll('rt'))
-        rt.textContent = iastToTamil(rt.textContent,'iast','tamil');
 };
 
 const cleanup = (doc) => {
