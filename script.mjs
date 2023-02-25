@@ -207,7 +207,7 @@ const toolTip = {
         tBoxDiv.myTarget = targ;
         tBox.appendChild(tBoxDiv);
         targ.addEventListener('mouseleave',toolTip.remove,{once: true});
-        targ.addEventListener('click',toolTip.remove,{once: true});
+        document.addEventListener('click',toolTip.remove,{once: true});
         //window.getComputedStyle(tBox).opacity;
         //tBox.style.opacity = 1;
         tBox.animate([
