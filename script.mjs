@@ -24,8 +24,8 @@ const init = () => {
                 decodeURIComponent(searchParams.get('q'))
             )
         );
-        state.textin.value = data.text || '';
-        state.wordin.value = data.words || '';
+        state.textin.value = data.text?.replace(/&percnt;/g,'%') || '';
+        state.wordin.value = data.words?.replace(/&percnt;/g, '%') || '';
     }
     else {
         state.textin.value = document.getElementById('default_text').textContent;
@@ -57,13 +57,15 @@ const update = async () => {
     const result = collate(text,words);
     state.teiout.textContent = result.replace(/></g,'>​<').replace(/(\w)\s(\w)/g,'$1 $2');
     hljs.highlightElement(state.teiout);
-    state.htmlout.innerHTML = '';
     const out = await teitohtml(result);
     tamilize(out);
+    state.htmlout.innerHTML = '';
     state.htmlout.append(out);
+    const savedtext = state.textin.value.replace(/%/g,'&percnt;');
+    const savedwords = state.wordin.value.replace(/%/g,'&percnt;');
     const qs = encodeURIComponent(
         JSONCrush.crush(
-            JSON.stringify({text: state.textin.value, words: state.wordin.value})
+            JSON.stringify({text: savedtext, words: savedwords})
         )
     );
     window.history.replaceState(null,null,window.location.pathname+`?q=${qs}`);
