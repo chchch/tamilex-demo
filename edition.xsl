@@ -87,7 +87,7 @@
                 <xsl:text>import { tamilize } from './transliterate.mjs';
                 const lookup = (e) => {
                 if(e.target.nodeName === 'RT' || e.target.classList?.contains('word')) {
-                    const clean = e.target.dataset.lemma.trim();
+                    const clean = e.target.dataset.norm.trim();
                     window.open(`https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=${clean}&amp;searchhws=yes&amp;matchtype=exact`,'lexicon','height=400,width=400');
                 }
                 };

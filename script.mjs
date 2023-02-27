@@ -42,7 +42,7 @@ const init = () => {
 
 const lookup = (e) => {
     if(e.target.nodeName === 'RT' || e.target.classList?.contains('word')) {
-        const clean = e.target.dataset.lemma.trim();
+        const clean = e.target.dataset.norm.trim();
         window.open(`https://dsal.uchicago.edu/cgi-bin/app/tamil-lex_query.py?qs=${clean}&searchhws=yes&matchtype=exact`,'lexicon','height=400,width=400');
     }
 };
@@ -78,7 +78,7 @@ const collate = (text, words) => {
     let res = '';
     for(const cur of split) {
         const find = cur[0];
-        const lemma = cur[1];
+        const norm = cur[1];
         const found = ingest(rem,find);
         if(!found)
             return `Error at ${find}.`;
@@ -86,8 +86,8 @@ const collate = (text, words) => {
         const spacesmatch = found[0].match(/^[\s\n]+/);
         const spaces = spacesmatch ? spacesmatch[0] : '';
         const trimmed = found[0].trimStart();
-        if(lemma || trimmed !== find)
-            res += `${spaces}<w lemma="${lemma || find}">${trimmed}</w>`.replace(/\n/,'<caesura/>');
+        if(norm || trimmed !== find)
+            res += `${spaces}<w norm="${norm || find}">${trimmed}</w>`.replace(/\n/,'<caesura/>');
         else
             res += `${spaces}<w>${trimmed}</w>`.replace(/\n/,'<caesura/>');
         rem = found[1];
