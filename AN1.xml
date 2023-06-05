@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="edition.xsl" ?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" n="Ed">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title><title xml:lang="ta">Akanāṉūṟu</title> 1. <term xml:lang="ta">Māmūlaṉ (Māmūlaṉār)</term></title>
+      </titleStmt>
+      <sourceDesc>
+        <msDesc xml:lang="en">
+          <msIdentifier>
+            <idno type="URI">https://www.manuscript-cultures.uni-hamburg.de/tamilex/poem.html?page=AN_1-1.xml</idno>
+            <idno type="URI">https://www.manuscript-cultures.uni-hamburg.de/tamilex/poem.html?page=AN_1-2.xml</idno>
+          </msIdentifier>
+           <msContents>
+            <summary><p></p>
+            </summary>
+          </msContents>    
+        </msDesc>
+        <listWit>
+            <witness xml:id="em">
+                <abbr>em.</abbr>
+                <expan>Editorial emendation</expan>
+            </witness>
+            <witness xml:id="C4">
+                <abbr><ref target="https://www.tamildigitallibrary.in/palms_detail?id=jZY9lup2kZl6TuXGlZQdjZhy">C<hi rend="subscript">4</hi></ref></abbr>
+                <expan>palm-leaf manuscript from UVSL [297] fragment: old comm. on KV-90</expan></witness>
+            <witness xml:id="TT">
+                <abbr>TT</abbr>
+                <expan>palm-leaf manuscript from Tiruvāvaṭutuṟai [no number] covering 299-400, except 336.19d-343.15c</expan></witness>
+            <witness xml:id="C1">
+                <abbr><ref target="https://www.tamildigitallibrary.in/palms_detail?id=jZY9lup2kZl6TuXGlZQdjZl2kZhy">C<hi rend="subscript">1</hi></ref></abbr>
+                <expan>palm-leaf manuscript from the UVSL [1075] covering 3(kiḷ.)-400.22b, except 46.12c-50 between pp. 165 and 166; 123.14-128.7a between pp. 197 and 198, 336.19d-343.15c</expan></witness>
+            <witness xml:id="NL">
+                <abbr>NL</abbr>
+                <expan>palm-leaf manuscript from the National Library in Kolkatta [3141/S.V.P. 91] complete, except 336.19d-343.15c [consulted to supplement the damaged C1]</expan></witness>
+            <witness xml:id="C3">
+                <abbr><ref target="https://www.tamildigitallibrary.in/palms_detail?id=jZY9lup2kZl6TuXGlZQdjZpy">C<hi rend="subscript">3</hi></ref></abbr>
+                <expan>palm-leaf manuscript from the UVSL [107] KV-351.7; 158.7ff.-172 + 204 missing; page number 47/48 omitted; dated to 1727 [matrix for the Vaiṣṇava strand]</expan></witness>
+            <witness xml:id="C2">
+                <abbr><ref target="https://www.tamildigitallibrary.in/palms_detail?id=jZY9lup2kZl6TuXGlZQdjZtdlJIy">C<hi rend="subscript">2</hi></ref></abbr>
+                <expan>palm-leaf manuscript from UVSL [28] KV-351.7; 158.7ff.-172 + 204 missing [misnumbered pages: 64/63]</expan></witness>
+            <witness xml:id="C6">
+                <abbr>C<hi rend="subscript">6</hi></abbr>
+                <expan>paper manuscript from the UVSL [4/66] covering KV-400, except 336.19d-343.15c [consulted where C1 is damaged and NL illegible]</expan></witness>
+            <witness xml:id="C8">
+                <abbr>C<hi rend="subscript">8</hi></abbr>
+                <expan>paper manuscript from the UVSL [6/68] [illegible due to lamination]</expan></witness>
+            <witness xml:id="C9">
+                <abbr>C<hi rend="subscript">9</hi></abbr>
+                <expan>paper manuscript from the UVSL [11/73] KV-399 (complete except for 7, 317, 322) [pencil corr./add. = C9c/v; based on strand 2 up to 17, then on strand 1]</expan></witness>
+            <witness xml:id="C7">
+                <abbr>C<hi rend="subscript">7</hi></abbr>
+                <expan>paper manuscript from the UVSL [5/67 ] KV-120, 301-400, [10/71] 121-300 (except 147, 149, 152, 230, 300) [pencil corrections/additions = C7c/v]</expan></witness>
+            <witness xml:id="G2">
+                <abbr>G<hi rend="subscript">2</hi></abbr>
+                <expan>paper manuscript from the GOML [R 5735/TR.1051] up to standard</expan></witness>
+            <witness xml:id="G1">
+                <abbr>G<hi rend="subscript">1</hi></abbr>
+                <expan>paper manuscript from the GOML [R 5734/TR.1050] complete, except 336.19d- 343.15c</expan></witness>
+            <witness xml:id="G3">
+                <abbr>G<hi rend="subscript">3</hi></abbr>
+                <expan>paper manuscript from the GOML [R 5736/TR.1052] 1-36 [containing a commentary but few of the poems]</expan></witness>
+            <witness xml:id="C5">
+                <abbr>C<hi rend="subscript">5</hi></abbr>
+                <expan>paper manuscript from the UVSL [7/69, 8/70, 9/72] complete in 3 vol.; dated to 1903/04 [matrix for the Vulgata strand]</expan></witness>
+            <witness xml:id="RK">
+                <abbr>RK</abbr>
+                <expan>Rājakopālāryaṉ/Irākavaiyaṅkar edition (1933?)</expan></witness>
+            <witness xml:id="VP">
+                <abbr>VP</abbr>
+                <expan>Vaiyāpurip Piḷḷai edition (1940) reported when deviating</expan></witness>
+            <witness xml:id="SS">
+                <abbr>SS</abbr>
+                <expan>Saiva Siddhānta = Kaḻakam edition (1943, 1944, 1944) reported for Neytal when deviating</expan></witness>
+            <witness xml:id="ER">
+                <abbr>ER</abbr>
+                <expan>Rājam edition (1957) reported when deviating</expan></witness>
+            <witness xml:id="SAv">
+                <abbr>SAv</abbr>
+                <expan>variants listed in the unpublished translation by Cupiramaṇiya Aiyar (1975)</expan></witness>
+            <witness xml:id="EC">
+                <abbr>EC</abbr>
+                <expan>Cāminātaiyar library edition by Civacupiramaṇiyaṉ (1990)</expan></witness>
+</listWit>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc/>
+  </teiHeader>
+  <text xml:lang="ta" type="edition">
+    <body>
+<div xml:id="AN1-kilavi">
+    <p type="edition">
+piriviṭai yāṟṟāḷāya talaimaka ṭōḻikkuc colliyatu.
+   </p>
+    <p type="translation" xml:lang="en">
+What was spoken to the confidante by HER who did not have the strength in the time of separation.
+    </p>
+</div>
+<div xml:id="AN1">
+<p type="edition">vaṇṭupaṭat tatainta kaṇṇi yoṇkaḻa<caesura/>
+luruvak kutirai maḻava rōṭṭiya<caesura/> 
+muruka ṉaṟpōr neṭuvē ḷāvi<caesura/>
+yaṟukōṭ ṭiyāṉaip <choice><seg>potuḷiya</seg><seg>potiṉi</seg></choice> yāṅkaṭ<caesura/>
+ciṟukā rōṭaṉ payiṉoṭu cērttiya<caesura/>
+kaṟpōṟ piriyala meṉṟa coṟṟā<caesura/>
+maṟantaṉar kollō tōḻi ciṟanta<caesura/>
+vēymaruḷ <choice><seg>paṇaittō ṇekiḻac cēeynāṭṭup</seg><seg>paṇaittōḷ ñekiḻa nāṭṭup</seg></choice><caesura/>
+polaṅkala veṟukkai tarumār nilampaka<caesura/>
+vaḻalpōl veṅkatir paitaṟat teṟutali<caesura/>
+ṉiḻaṟēyn tulaṟiya maratta <choice><seg>varai</seg><seg>va<supplied>ṟai</supplied></seg></choice>kāy<caesura/>
+paṟunīrp paiñcuṉai yāmaṟap pulartali<caesura/>
+<supplied>ṉuku</supplied>neṟ poriyum vemmaiya yāvarum<caesura/>
+vaḻaṅkuna riṉmaiyiṉ <choice><seg>vauvunar</seg><seg>vavvu<supplied>na</supplied>r</seg></choice> maṭiyac<caesura/>
+curampul leṉṟa vāṟṟa valaṅkuciṉai<caesura/>
+<choice><seg>nāriṉ</seg><seg>nārila</seg></choice> muruṅkai <choice><seg>naviral</seg><seg>virala</seg></choice> vāṉpūc<caesura/>
+cūralaṅ kaṭuvaḷi yeṭuppa vāruṟ<caesura/>
+ṟuṭaitiraip pitirviṟ poṅki muṉ<caesura/>
+kaṭalpō ṟōṉṟala kāṭiṟan tōrē<caesura/>
+</p>
+<lg type="translation" xml:lang="en">
+<l rend="indent">In that place <choice><seg>full of</seg><seg>Pontini,</seg></choice> the elephants with broken tusks</l>
+<l rend="indent">of Āvi with long rule in good battle, [and] of Murukaṉ, </l>
+<l rend="indent">who made warriors with shapely horses run, </l>
+<l rend="indent">bright anklets [and] chaplets dense so that bees settle [there], </l>
+<l>the words “we won’t separate, like the stones</l>
+<l rend="indent">joined together with glue by the <choice><seg>maker of little whestone”,</seg><seg>little whetstone maker”,</seg></choice></l>
+<l>has he forgotten [them], friend,</l>
+<l>― he who,</l>
+<l>in order to bring a wealth of golden ornaments, from strange lands,</l>
+<l rend="indent">while [my] superb bamboo-like bamboo shoulders become emaciated,</l>
+<l rend="indent5">traversed wildernesses that appear like the sea</l>
+<l>before [him], foaming with the spray of breaking waves,</l>
+<l>roaring when the whirling fierce wind lifts</l>
+<l>the <choice><seg>dishevelled white</seg><seg>fingery pure</seg></choice> flowers of <choice><seg>the barkless Muruṅkai tree</seg><seg>barkless Muruṅkai trees</seg></choice></l>
+<l>with swaying branches on empty desert paths,</l>
+<l rend="indent">as robbers doze, in the absence of anybody passing,</l>
+<l rend="indent">in the heat that parches the paddy shed because of drying up,</l>
+<l rend="indent">while the water ceases in mountain pools with ceasing water,</l>
+<l rend="indent">the <choice><seg>slopes</seg><seg>rocks</seg></choice> with withering trees sweltering, shade dwindling,</l>
+<l rend="indent2">because [sun] beams, hot like fire, scorch so that the green ceases,</l>
+<l rend="indent2">so that the ground cracks.</l>
+</lg>
+</div>
+</body>
+</text>
+<standOff corresp="#AN1" type="wordsplit">
+    <fs corresp="0,5">
+        <f name="lemma">vaṇṭu</f>
+        <f name="translation">bee</f>
+    </fs>
+    <fs corresp="5,10">
+        <f name="lemma">paṭa<pc>+</pc></f>
+        <f name="translation">happen</f>
+    </fs>
+    <fs corresp="11,19">
+        <f name="lemma">tatainta</f>
+        <f name="translation">densely-packed</f>
+    </fs>
+    <fs corresp="20,25">
+        <f name="lemma">kaṇṇi</f>
+        <f name="translation">chaplet</f>
+    </fs>
+    <fs corresp="26,29">
+        <f name="lemma"><pc>~</pc>oḷ</f>
+        <f name="translation">bright</f>
+    </fs>
+    <fs corresp="29,35">
+        <f name="lemma">kaḻal</f>
+        <f name="translation">anklet</f>
+    </fs>
+    <fs corresp="35,41">
+        <f name="lemma">uruva<pc>+</pc></f>
+        <f name="translation">shape</f>
+    </fs>
+    <fs corresp="42,49">
+        <f name="lemma">kutirai</f>
+        <f name="translation">horse</f>
+    </fs>
+    <fs corresp="50,58">
+        <f name="lemma">maḻavar</f>
+        <f name="translation">warrior</f>
+    </fs>
+    <fs corresp="58,64">
+        <f name="lemma">ōṭṭiya</f>
+        <f name="translation">made-run</f>
+    </fs>
+    <fs corresp="66,72">
+        <f name="lemma">murukaṉ</f>
+        <f name="translation">Murukaṉ</f>
+    </fs>
+    <fs corresp="73,76">
+        <f name="lemma">nal</f>
+        <f name="translation">good</f>
+    </fs>
+    <fs corresp="76,79">
+        <f name="lemma">pōr</f>
+        <f name="translation">battle</f>
+    </fs>
+    <fs corresp="80,84">
+        <f name="lemma">neṭu</f>
+        <f name="translation">long</f>
+    </fs>
+    <fs corresp="84,88">
+        <f name="lemma">vēḷ</f>
+        <f name="translation">ruler</f>
+    </fs>
+    <fs corresp="88,91">
+        <f name="lemma">āvi</f>
+        <f name="translation">Āvi</f>
+    </fs>
+    <fs corresp="92,96">
+        <f name="lemma"><pc>~</pc>aṟu</f>
+        <f name="translation">be-severed-</f>
+    </fs>
+    <fs corresp="96,102">
+        <f name="lemma">kōṭṭ<pc>(</pc>i<pc>)</pc></f>
+        <f name="translation">tusk-</f>
+    </fs>
+    <fs corresp="102,108">
+        <f name="lemma">yāṉai<pc>+</pc></f>
+        <f name="translation">elephant</f>
+    </fs>
+    <fs corresp="109,117">
+        <f name="lemma">potuḷiya</f>
+        <f name="translation">been-full-</f>
+    </fs>
+    <fs corresp="117,123">
+        <f name="lemma">potiṉi</f>
+        <f name="translation">Potiṉi</f>
+    </fs>
+    <fs corresp="124,130">
+        <f name="lemma"><pc>~</pc>āṅkaṇ</f>
+        <f name="translation">that-place</f>
+    </fs>
+    <fs corresp="131,135">
+        <f name="lemma">ciṟu</f>
+        <f name="translation">small</f>
+    </fs>
+    <fs corresp="135,143">
+        <f name="lemma">kārōṭaṉ</f>
+        <f name="translation">whetstone-maker</f>
+    </fs>
+    <fs corresp="144,152">
+        <f name="lemma">payiṉoṭu</f>
+        <f name="translation">glue-with</f>
+    </fs>
+    <fs corresp="153,161">
+        <f name="lemma">cērttiya</f>
+        <f name="translation">joined-</f>
+    </fs>
+    <fs corresp="162,165">
+        <f name="lemma">kal</f>
+        <f name="translation">stone</f>
+    </fs>
+    <fs corresp="165,168">
+        <f name="lemma">pōl</f>
+        <f name="translation">be-similar-</f>
+    </fs> 
+    <fs corresp="169,179">
+        <f name="lemma">piriyalam</f>
+        <f name="translation">separate-not-we</f>
+    </fs>
+    <fs corresp="179,183">
+        <f name="lemma">eṉṟa</f>
+        <f name="translation">said-</f>
+    </fs> 
+    <fs corresp="184,187">
+        <f name="lemma">col</f>
+        <f name="translation">word</f>
+    </fs>
+    <fs corresp="187,189">
+        <f name="lemma">tām</f>
+        <f name="translation">he(h.)</f>
+    </fs>
+    <fs corresp="190,206">
+        <f name="lemma">maṟantaṉar-kollō</f>
+        <f name="translation">he-forgot(h.)kollō</f>
+    </fs>
+    <fs corresp="207,211">
+        <f name="lemma">tōḻi</f>
+        <f name="translation">friend</f>
+    </fs> 
+    <fs corresp="212,219">
+        <f name="lemma">ciṟanta</f>
+        <f name="translation">been-superior-</f>
+    </fs>
+    <fs corresp="220,222">
+        <f name="lemma">vēy</f>
+        <f name="translation">bamboo</f>
+    </fs>
+    <fs corresp="222,228">
+        <f name="lemma">maruḷ</f>
+        <f name="translation">be-confused-</f>
+    </fs>
+    <fs corresp="229,235">
+        <f name="lemma">paṇai<pc>+</pc></f>
+        <f name="translation">bamboo</f>
+    </fs>
+    <fs corresp="235,237">
+        <f name="lemma">tōḷ</f>
+        <f name="translation">shoulder</f>
+    </fs>
+    <fs corresp="238,245">
+        <f name="lemma">nekiḻa<pc>+</pc></f>
+        <f name="translation">be-emaciated(inf.)</f>
+    </fs> 
+    <fs corresp="246,250">
+        <f name="lemma">cēey</f>
+        <f name="translation">distance</f>
+    </fs>
+    <fs corresp="250,256">
+        <f name="lemma">nāṭṭu<pc>+</pc></f>
+        <f name="translation">land-</f>
+    </fs>
+    <fs corresp="256,262">
+        <f name="lemma">paṇai<pc>+</pc></f>
+        <f name="translation">bamboo</f>
+    </fs>
+    <fs corresp="262,265">
+        <f name="lemma">tōḷ</f>
+        <f name="translation">shoulder</f>
+    </fs> 
+    <fs corresp="266,272">
+        <f name="lemma">ñekiḻa</f>
+        <f name="translation">be-emaciated(inf.)</f>
+    </fs> 
+    <fs corresp="273,279">
+        <f name="lemma">nāṭṭu<pc>+</pc></f>
+        <f name="translation">land-</f>
+    </fs>
+
+    <fs corresp="280,285">
+        <f name="lemma">polam</f>
+        <f name="translation">gold</f>
+    </fs>
+    <fs corresp="285,289">
+        <f name="lemma">kalam</f>
+        <f name="translation">ornament</f>
+    </fs> 
+    <fs corresp="290,298">
+        <f name="lemma">veṟukkai</f>
+        <f name="translation">wealth</f>
+    </fs> 
+    <fs corresp="299,306">
+        <f name="lemma">tarumār</f>
+        <f name="translation">give(inf.)</f>
+    </fs> 
+    <fs corresp="307,312">
+        <f name="lemma">nilam</f>
+        <f name="translation">ground</f>
+    </fs>
+    <fs corresp="312,316">
+        <f name="lemma">paka</f>
+        <f name="translation">split(inf.)</f>
+    </fs>
+
+    <fs corresp="317,322">
+        <f name="lemma"><pc>~</pc>aḻal</f>
+        <f name="translation">fire</f>
+    </fs>
+    <fs corresp="322,325">
+        <f name="lemma">pōl</f>
+        <f name="translation">hot</f>
+    </fs> 
+    <fs corresp="326,329">
+        <f name="lemma">vem</f>
+        <f name="translation">ray</f>
+    </fs>
+    <fs corresp="329,334">
+        <f name="lemma">katir</f>
+        <f name="translation">fresh-it</f>
+    </fs> 
+    <fs corresp="335,339">
+        <f name="lemma">pait<pc>(</pc>u<pc>)</pc></f>
+        <f name="translation">be-severed(inf.)</f>
+    </fs>
+    <fs corresp="339,343">
+        <f name="lemma">aṟa<pc>+</pc></f>
+        <f name="translation">be-severed(inf.)</f>
+    </fs> 
+    <fs corresp="344,354">
+        <f name="lemma">teṟutaliṉ</f>
+        <f name="translation">scorching_iṉ</f>
+    </fs>
+    <fs corresp="354,357">
+        <f name="lemma">niḻal</f>
+        <f name="translation">shade</f>
+    </fs>
+    <fs corresp="357,363">
+        <f name="lemma">tēynt<pc>(</pc>u<pc>)</pc></f>
+        <f name="translation">reduced</f>
+    </fs>
+    <fs corresp="363,370">
+        <f name="lemma">ulaṟiya</f>
+        <f name="translation">dried-up-</f>
+    </fs> 
+    <fs corresp="371,378">
+        <f name="lemma">maratta</f>
+        <f name="translation">tree_a</f>
+    </fs>
+    <fs corresp="379,384">
+        <f name="lemma">varai</f>
+        <f name="translation">mountain</f>
+    </fs>
+    <fs corresp="384,389">
+        <f name="lemma"><pc>~</pc>a<supplied>ṟai</supplied></f>
+        <f name="translation">rock</f>
+    </fs>
+    <fs corresp="389,394">
+        <f name="lemma">kāyp<pc>(</pc>u<pc>)</pc></f>
+        <f name="translation">heated</f>
+    </fs>
+    <fs corresp="394,397">
+        <f name="lemma">aṟu</f>
+        <f name="translation">be-severed-</f>
+    </fs>
+    <fs corresp="397,401">
+        <f name="lemma">nīr<pc>+</pc></f>
+        <f name="translation">water</f>
+    </fs> 
+    <fs corresp="402,406">
+        <f name="lemma">paim</f>
+        <f name="translation">fresh</f>
+    </fs>
+    <fs corresp="406,411">
+        <f name="lemma">cuṉai</f>
+        <f name="translation">mountain-pool</f>
+    </fs> 
+    <fs corresp="412,415">
+        <f name="lemma"><pc>~</pc>ām</f>
+        <f name="translation">water</f>
+    </fs>
+    <fs corresp="415,419">
+        <f name="lemma">aṟa<pc>+</pc></f>
+        <f name="translation">cease(inf.)</f>
+    </fs> 
+    <fs corresp="420,431">
+        <f name="lemma">pulartali<supplied>ṉ</supplied></f>
+        <f name="translation">drying_iṉ</f>
+    </fs>
+    <fs corresp="431,434">
+        <f name="lemma"><supplied>uku</supplied></f>
+        <f name="translation">be-shed-</f>
+    </fs>
+    <fs corresp="434,437">
+        <f name="lemma">nel</f>
+        <f name="translation">paddy</f>
+    </fs> 
+    <fs corresp="438,445">
+        <f name="lemma">poriyum</f>
+        <f name="translation">parching-</f>
+    </fs> 
+    <fs corresp="446,454">
+        <f name="lemma">vemmaiya</f>
+        <f name="translation">heat_a</f>
+    </fs> 
+    <fs corresp="455,462">
+        <f name="lemma">yāvarum</f>
+        <f name="translation">who(h.)_um</f>
+    </fs>
+    <fs corresp="463,474">
+        <f name="lemma">vaḻaṅkunar</f>
+        <f name="translation">roam-they(h.)</f>
+    </fs>
+    <fs corresp="474,482">
+        <f name="lemma">iṉmaiyiṉ</f>
+        <f name="translation">absence_iṉ</f>
+    </fs>
+    <fs corresp="483,491">
+        <f name="lemma">vauvunar</f>
+        <f name="translation">snatch-they(h.)</f>
+    </fs>
+    <fs corresp="491,499">
+        <f name="lemma">vavvu<supplied>na</supplied>r</f>
+        <f name="translation">snatch-they(h.)</f>
+    </fs> 
+    <fs corresp="500,507">
+        <f name="lemma">maṭiya<pc>+</pc></f>
+        <f name="translation">droop(inf.)</f>
+    </fs>
+    <fs corresp="508,513">
+        <f name="lemma">curam</f>
+        <f name="translation">desert</f>
+    </fs>
+    <fs corresp="513,522">
+        <f name="lemma">pulleṉṟa</f>
+        <f name="translation">'pul'-said-</f>
+    </fs> 
+    <fs corresp="523,528">
+        <f name="lemma"><pc>~</pc>āṟṟa</f>
+        <f name="translation">path_a</f>
+    </fs> 
+    <fs corresp="529,536">
+        <f name="lemma"><pc>~</pc>alaṅku</f>
+        <f name="translation">sway-</f>
+    </fs>
+    <fs corresp="536,541">
+        <f name="lemma">ciṉai</f>
+        <f name="translation">branch</f>
+    </fs>
+    <fs corresp="542,545">
+        <f name="lemma">nār</f>
+        <f name="translation">bark</f>
+    </fs>
+    <fs corresp="545,547">
+        <f name="lemma">il</f>
+        <f name="translation">not</f>
+    </fs>
+    <fs corresp="547,550">
+        <f name="lemma">nār</f>
+        <f name="translation">bark</f>
+    </fs>
+    <fs corresp="550,553">
+        <f name="lemma">ila</f>
+        <f name="translation">not(n.pl.)</f>
+    </fs>
+    <fs corresp="554,562">
+        <f name="lemma">muruṅkai</f>
+        <f name="translation">Muruṅkai</f>
+    </fs>
+    <fs corresp="563,570">
+        <f name="lemma">naviral</f>
+        <f name="translation">being-dishevelled</f>
+    </fs>
+    <fs corresp="570,576">
+        <f name="lemma">virala</f>
+        <f name="translation">finger_a</f>
+    </fs> 
+    <fs corresp="577,580">
+        <f name="lemma">vāl</f>
+        <f name="translation">pure</f>
+    </fs>
+    <fs corresp="580,583">
+        <f name="lemma">pū<pc>+</pc></f>
+        <f name="translation">flower</f>
+    </fs>
+    <fs corresp="584,591">
+        <f name="lemma">cūralam</f>
+        <f name="translation">whirling_am</f>
+    </fs> 
+    <fs corresp="592,596">
+        <f name="lemma">kaṭu</f>
+        <f name="translation">fierce</f>
+    </fs>
+    <fs corresp="596,600">
+        <f name="lemma">vaḷi</f>
+        <f name="translation">wind</f>
+    </fs> 
+    <fs corresp="601,608">
+        <f name="lemma"><pc>~</pc>eṭuppa</f>
+        <f name="translation">lift(inf.)</f>
+    </fs> 
+    <fs corresp="609,612">
+        <f name="lemma"><pc>~</pc>ār</f>
+        <f name="translation">roaring</f>
+    </fs>
+    <fs corresp="612,616">
+        <f name="lemma">uṟṟ<pc>(</pc>u<pc>)</pc></f>
+        <f name="translation">had</f>
+    </fs>
+    <fs corresp="616,620">
+        <f name="lemma">uṭai</f>
+        <f name="translation">break-</f>
+    </fs>
+    <fs corresp="620,626">
+        <f name="lemma">tirai<pc>+</pc></f>
+        <f name="translation">wave</f>
+    </fs> 
+    <fs corresp="627,635">
+        <f name="lemma">pitirviṉ</f>
+        <f name="translation">spray_iṉ</f>
+    </fs> 
+    <fs corresp="636,641">
+        <f name="lemma">poṅki</f>
+        <f name="translation">foamed</f>
+    </fs> 
+    <fs corresp="642,645">
+        <f name="lemma">muṉ</f>
+        <f name="translation">before</f>
+    </fs>
+    <fs corresp="646,651">
+        <f name="lemma">kaṭal</f>
+        <f name="translation">sea</f>
+    </fs>
+    <fs corresp="651,653">
+        <f name="lemma">pōl</f>
+        <f name="translation">be-similar-</f>
+    </fs>
+    <fs corresp="654,661">
+        <f name="lemma">tōṉṟala</f>
+        <f name="translation">appearling-they(n.pl.)</f>
+    </fs> 
+    <fs corresp="662,665">
+        <f name="lemma">kāṭ'</f>
+        <f name="translation">wilderness</f>
+    </fs>
+    <fs corresp="665,674">
+        <f name="lemma">iṟantōrē<pc>∞</pc></f>
+        <f name="translation">traversed-he(h.)_ē</f>
+    </fs>
+</standOff>
+<standOff corresp="#AN1-kilavi" type="apparatus">
+    <listApp>
+        <app corresp="0,20">
+            <lem>piriviṭai yāṟṟāḷāya</lem>
+            <rdg wit="#C2 #C3 #C9 #RKv">talaimakaṉ piriviṉkaṇ</rdg>
+        </app>
+    </listApp>
+</standOff>
+<standOff corresp="#AN1" type="apparatus">
+    <listApp>
+        <app corresp="26,33">
+            <lem wit="#NL #C5 #C6 #C7 #C9 #RK">yoṇkaḻa</lem>
+            <rdg wit="#C2 #C3">yo<sic>ṉ</sic>kaḻa</rdg>
+        </app>
+        <app corresp="50,56">
+            <lem wit="#NL #C5 #C6 #C7 #C9 #RK">maḻava</lem>
+            <rdg wit="#C2 #C3">ma<sic>ḷa</sic>va</rdg>
+        </app>
+        <app corresp="109,123">
+            <lem wit="#em">potuḷiya<note place="foot" xml:lang="en">In order to make the reading preserved by the first strand tenable it is necessary to change the <term xml:lang="ta">viṉaiyeccam</term> into a <term xml:lang="ta">peyareccam</term>.</note></lem>
+            <rdg wit="#NL #C6 #C7 #C9 #Nacc.(T), #IV(T)">potu<sic>ḷi</sic></rdg>
+            <rdg wit="#C2 #C3 #C5 #C7c #C9c #Nacc.(P+Ka) #IV(I) #RK #ER">potiṉi</rdg>
+        </app>
+        <app corresp="229,279">
+            <lem wit="#NL #C6 #C7 #C9v">paṇaitto ṇekiḻac ceeynāṭṭup</lem>
+            <rdg wit="#C5 #Nacc.(TC) #IV(T) #RK #VP #ER">paṇaitto ṇekiḻac ceynāṭṭup</rdg>
+            <rdg wit="#Nacc. #IV(I)">paṇaittōḷ ñekiḻa ceynāṭṭup</rdg>
+            <rdg wit="#C2 #C3 #C9">paṇaittōḷ ñekiḻa nāṭṭup</rdg>
+        </app>
+        <app corresp="353,361">
+            <lem wit="#NL #C5 #C6 #C7 #C9 #RK">ṉiḻaṟēyn</lem>
+            <rdg wit="#C2 #C3"><sic>ṉī</sic>ḻaṟēyn</rdg>
+        </app>
+        <app corresp="371,392">
+            <lem wit="#C5 #C6 #C7 #C9v #Nacc.(P)">maratta varaikāy</lem>
+            <rdg wit="#C2 #C3 #C9">maratta vaṟukāy</rdg>
+            <rdg wit="#C9v #Nacc.(Ka) #IV #RK #VP #ER">maratta vaṟaikāy<note xml:lang="en" place="foot"><term xml:lang="ta">v<pc>-</pc>aṟai</term> here has to be taken as an emendation of the reading of the second strand, <term xml:lang="ta">vaṟu</term>, which cannot be construed.</note></rdg><rdg wit="#Nacc.(T)">marattava ṇaṭikāy</rdg>
+        </app>
+        <app corresp="412,419">
+            <lem wit="#NL #C5 #C6 #C7 #C9 #RK">yāmaṟap</lem>
+            <rdg wit="#C2 #C3">yā<space quantity="3" unit="character"/></rdg>
+        </app>
+        <app corresp="420,437">
+            <lem wit="#C3 #C5 #C7 #C9 #Nacc. #IV #RK">pulartali ṉukuneṟ</lem>
+            <rdg wit="#C2">pulartaliṉ vaṟuneṟ</rdg>
+            <rdg wit="#NL">pulartali <gap quantity="2" unit="character" reason="lost"/>neṟ</rdg>
+            <rdg wit="#C6">pularna likuneṟ</rdg>
+        </app>
+        <app corresp="463,472">
+            <lem wit="#NL #C5 #C7 #C9c #RK">vaḻaṅkuna</lem>
+            <rdg wit="#C6">va<sic>ḻa</sic>ṅku<sic>ṉa</sic></rdg>
+            <rdg wit="#C2 #C3 #C9">vaḷaṅku<sic>ṉa</sic></rdg>
+        </app>
+        <app corresp="483,499">
+            <lem wit="#C5 #C7 #C9v #Nacc. #IV #RK">vauvunar</lem>
+            <rdg wit="#NL #C6 #C9">vauvu<sic>ṉa</sic>r</rdg>
+            <rdg wit="#C2 #C3">vavvu<sic>ṉa</sic>r</rdg>
+        </app>
+        <app corresp="542,576">
+            <lem wit="#NL #C5 #C6 #C7 #C9 #Nacc. #IV">nāriṉ muruṅkai naviral<note place="foot"><term xml:lang="ta">naviral</term> seems to be attested only here and has found entry into the TL as <q>a kind of tree</q> (based on this passage), not very convincing since it is preceded by another proper noun and plant name, the slightly better attested <term xml:lang="ta">muruṅkai</term>.  Moreover, the provenance of this explanation is unclear, as the old commentary offers a gloss <term xml:lang="ta">kulaital</term> (<q>to be dishevelled</q>) for <term xml:lang="ta">naviral</term>.  Formally it could be well understood as a verbal noun, and verbal nouns can be used in attributive position in <title xml:lang="ta">Caṅkam</title> poetry, but a root <term xml:lang="ta">navir-tal</term> does not seem to be attested otherwise.</note></lem>
+            <rdg wit="#RK">nāriṉ muruṅkai navirala</rdg>
+            <rdg wit="#C2 #C3">nārila ______ naṅkai virala</rdg>
+        </app>
+        <app corresp="646,653">
+            <lem wit="#NL #Pēr.(P) #Nacc. #C6">kaṭalpō</lem>
+            <rdg wit="#C2 #C3 #C5 #C7 #C9 #Pēr.(Ka) #RK">kaṭalpōṟ</rdg>
+        </app>
+        <app corresp="654,661">
+            <lem wit="#NL #C3 #C5 #C9 #Iḷ.(TC) #Cēṉ.[TC286] #Pēr.(Ka) #Nacc.(TC)[TC288] #Nacc.(P+Ka) #Tey.(TC254) #Kal. #May. #CC #Kuḻ #IV(I) #RK">ṟōṉṟala</lem>
+            <rdg wit="#C2"><gap reason="lost" quantity="5" unit="character"/></rdg>
+            <rdg wit="#C6 #Cēṉ.[TC257] #Pēr.(T+P) #Nacc.(TC)[TC259] #Nacc.(T) #Tey.(TC282) #NV #IV(T)">ṟōṉṟal</rdg>
+            <rdg wit="#C7"><sic>cimaiṉṟala</sic></rdg>
+        </app>
+    </listApp>
+</standOff>
+</TEI>

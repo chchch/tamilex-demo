@@ -1,0 +1,73 @@
+:lang(ta-Taml) {
+    word-spacing: 1rem;
+}
+:lang(en) {
+    word-spacing: normal;
+}
+#record-fat section > table {
+    max-width: unset;
+    width: 100%;
+}
+
+span.choice {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+
+}
+span.choice > span:not(:last-child)::after {
+    content: '';
+}
+span.choice > span, span.choice > ruby {
+    line-height: 1.8rem;
+}
+
+span.choice > span:last-child ruby {
+    ruby-position: under;
+}
+
+div.lg div.l {
+    text-indent: revert;
+    line-height: 3.5rem;
+}
+div.lg div.l.indent {
+    text-indent: 1rem;
+}
+div.lg div.l.indent2 {
+    text-indent: 2rem;
+}
+div.lg div.l.indent3 {
+    text-indent: 3rem;
+}
+div.lg div.l.indent4 {
+    text-indent: 4rem;
+}
+div.lg div.l.indent5 {
+    text-indent: 5rem;
+}
+.text-block:first-child { line-height: 3.5rem;}
+.text-block:last-child {line-height: 3.5rem; }
+rt { padding-bottom: 0.5rem;}
+rt:hover, span.word:hover { background-color: yellow; cursor: pointer; }
+#tooltip { font-size: 1.1rem; }
+
+.standOff {
+    display: none;
+}
+
+span.word.split {
+    animation-duration: 0.5s;
+    animation-name: slideout;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    margin-right: 0.5rem;
+}
+
+span.invisible {
+    color: rgba(17,17,17,0.5);
+}
+
+@keyframes slideout {
+    from { margin-right: 0; }
+    to { margin-right: 0.5rem; }
+}
